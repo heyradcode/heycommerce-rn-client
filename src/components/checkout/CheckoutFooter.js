@@ -42,6 +42,10 @@ const styles = {
   buttonText: {
     color: backgroundColor,
   },
+  checkoutButton: {
+    alignItems: 'center',
+    backgroundColor: 'white',
+  }
 };
 
 class CheckoutFooter extends PureComponent {
@@ -118,7 +122,7 @@ class CheckoutFooter extends PureComponent {
             {totalAmount.toFixed(2)}
           </Text>
         </View>
-        <View style={styles.container}>
+        <View style={styles.checkoutButton}>
           <FullButton title="Checkout" onPress={this.handleCheckout} />
         </View>
       </View>
